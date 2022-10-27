@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: "Lato";
+    font-weight: normal;
+    font-style: normal;
+}
+header {
+    margin: 42px 0 17px;
+}
+main {
+    margin: 0 100px;
+}
+.form-control:focus, .btn:focus {
+    background: unset;
+    color: unset;
+    box-shadow: unset;
+}
+
+/* logo et titre */
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo img {
+    width: 50px;
+}
+.logo h1 {
+    margin: 0;
+    font-family: "DM Sans";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 47px;
+    color: #D04F4F;
+}
+
+/* barre de recherche */
+.search {
+    background: #E7E7E7;
+    border-radius: 5px;
+}
+.search input, .search button {
+    background: none;
+    border: none;
+}
+.search input {
+    padding: 23px 22px 24px;
+    font-size: 18px;
+}
+
+.search input::placeholder {
+    font-family: "Lato";
+    opacity: 0.80;
+}
+.input-group-append {
+    display:flex;
+    align-items: center;
+}
+.search button {
+    padding-right: 20px;
+}
