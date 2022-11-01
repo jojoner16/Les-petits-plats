@@ -61,7 +61,7 @@ main {
     padding-right: 20px;
 }
 
-/* filtres */
+/* filtres/liste déroulante */
 .filters {
     display: flex;
     flex-direction: column;
@@ -196,6 +196,78 @@ main {
 .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
     margin-left: 0;
     border-bottom-left-radius: 5px;
+}
+
+/* recettes/ cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 50px;
+}
+.grid .card-img-top {
+    height: 178px;
+    object-fit: cover;
+    background: #C7BEBE;
+}
+.grid .card {
+    overflow: hidden;
+    border: none;
+    background: #E7E7E7;
+}
+.grid .card-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 20px;
+}
+.recipeHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 20px;
+}
+.recipeHeader h2 {
+    margin: 0;
+}
+.recipeTime {
+    display: flex;
+    gap: 7px;
+}
+.recipeMinutes {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+.recipeTitle{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
+}
+.recipeIngredients, .recipePreparation {
+    margin: 0;
+    width: 50%;
+    font-size: 12px;
+}
+.recipeIngredients {
+    line-height: 14px;
+    list-style: none;
+    padding: 0;
+    min-height: 105px;
+}
+.recipeIngredientName {
+    font-weight: bold;
+}
+.recipePreparation {
+    line-height: 12px;
+    font-family: "Roboto";
+    font-style: normal;
+    height: 109px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
 }
 
 
