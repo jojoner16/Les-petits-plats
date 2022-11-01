@@ -101,6 +101,7 @@ function addDropdownFilter(event) {
     if (!listType.has(text)) {
         listType.add(text);
         selectedFilters.appendChild(createDropdownFilterCard(text, type));
+        recipesTagUpdate();
     }
 
     if (listOfIngredientsSelected.size + listOfAppliancesSelected.size + listOfUtensilsSelected.size >0) {
@@ -121,11 +122,14 @@ function removeDropdownFilter(event) {
     if (listType.has(text)) {
         listType.delete(text);
         target.parentNode.outerHTML = "";
+        recipesTagReload();
     }
 
     if (listOfIngredientsSelected.size + listOfAppliancesSelected.size + listOfUtensilsSelected.size >0) {
         selectedFilters.style.display = "flex";
-    } else { selectedFilters.style.display = ""; }
+    } else { 
+        selectedFilters.style.display = ""; 
+    }
 }
 
 function getDropdownsLists() {
