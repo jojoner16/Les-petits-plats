@@ -49,8 +49,8 @@ function createCard(recipe) {
         recipeTime.classList.add("recipeTime");
 
     const recipeImg = document.createElement("img");
-        recipeImg.src = "assets/icons/time.svg";
-        recipeImg.alt = " ";
+        recipeImg.src = "/assets/icons/time.svg";
+        recipeImg.alt = "time";
         recipeTime.appendChild(recipeImg);
 
     const recipeMinutes = document.createElement("span");
