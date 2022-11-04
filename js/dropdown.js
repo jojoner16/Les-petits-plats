@@ -82,7 +82,7 @@ function createDropdownFilterCard(text, type) {
           filter.dataset.type = type;
         const img = document.createElement("img");
               img.src = "assets/icons/delete.svg";
-              img.alt = "";
+              img.alt = "fermer";
               img.setAttribute("onclick", "removeDropdownFilter(event)");
         filter.appendChild(img);
     return filter;
