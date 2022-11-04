@@ -250,7 +250,7 @@ main {
     overflow: hidden;    
 }
 .recipeIngredients {
-    width: 58%;
+    width: 55%;
     font-size: 14px;
     line-height: 16px;
     list-style: none;
@@ -262,7 +262,7 @@ main {
 }
 .recipePreparation {
     width: 40%;
-    /* margin-left: 1%; */
+    margin-left: 4%;
     text-overflow: ellipsis;
     font-size: 14px;
     line-height: 16px;
