@@ -24,7 +24,8 @@ const recipes = [
                 "unit" : "grammes"
             },
             {
-                "ingredient": "Glaçons"
+                "ingredient" : "Glaçons",
+                "quantity" : 2,
             }
         ],
         "time": 10,
@@ -174,7 +175,7 @@ const recipes = [
            {
                 "ingredient": "Moutarde de Dijon",
                 "quantity": 1,
-                "unite": "cuillères à soupe"
+                "unit": "cuillères à soupe"
            }
         ],
         "time": 45,
@@ -312,17 +313,23 @@ const recipes = [
                 "unit": "grammes"
             },
             {
-                "ingredient": "Vinaigre Balsamic"
+                "ingredient": "Vinaigre Balsamic",
+                "quantity": 1,
+                "unit": "cuillères à soupe"
             },
             {
-                "ingredient": "Huile d'olive"
+                "ingredient": "Huile d'olive",
+                "quantity": 3,
+                "unit": "cuillères à soupe"
             }, 
             {
-                "ingredient": "Basilic"    
+                "ingredient": "Basilic",
+                "quantity": 1,
+                "unit": "tiges"
             }
         ],
         "time": 15,
-        "description":"Peler le concombre le couper 2, retirer les pépins. Couper les olives en morceaux, ainsi que le fromage de chèvre. Ajouter le basilic ainsi que le vinaigre balsamic et l'huile d'olives à votre gout.",
+        "description":"Peler le concombre le couper en 2, retirer les pépins. Couper les olives en morceaux, ainsi que le fromage de chèvre. Ajouter le basilic ainsi que le vinaigre balsamic et l'huile d'olives à votre gout.",
         "appliance":"Saladier",
         "ustensils":["cuillère en bois", "couteau"]
     },
@@ -603,7 +610,8 @@ const recipes = [
                 "quantity": 8
             },
             {
-                "ingredient": "Menthe"
+                "ingredient": "Menthe",
+                "unit": "1 tiges"
             }
         ],
         "time": 15,
@@ -917,7 +925,7 @@ const recipes = [
             {
                 "ingredient": "Ail",
                 "quantity": 1,
-                "unit": "gousses"
+                "unit": "gousse"
             }
         ],
         "time": 25,
@@ -1014,10 +1022,14 @@ const recipes = [
                 "quantity": 2
             },
             {
-                "ingredient": "Huile d'olive"
+                "ingredient": "Huile d'olive",
+                "quantity": 2,
+                "unit": "cuillère à soupe"
             },
             {
-                "ingredient": "Paprika"
+                "ingredient": "Paprika",
+                "quantity": 1,
+                "unit": "cuillère à café"
             }
         ],
         "time": 30,
@@ -1176,7 +1188,9 @@ const recipes = [
                 "unit": "cl"
             },
             {
-                "ingredient": "Huile d'olive"
+                "ingredient": "Huile d'olive",
+                "quantity": 2,
+                "unit": "cuillères à soupe"
             },
             {
                 "ingredient": "Orange",
@@ -1475,7 +1489,8 @@ const recipes = [
                 "quantity": 3
             },
             {
-                "ingredient": "Citron"
+                "ingredient": "Citron",
+                "quantity": 3
             }
         ],
         "time": 50,
