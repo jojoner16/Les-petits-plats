@@ -29,10 +29,17 @@ function structureItems(recipes) {
 function createCard(recipe) {
     const card = document.createElement("article");
         card.classList.add("card");
+
+               // recettes avec images
+    const cardImg = document.createElement("img");           
+        cardImg.classList.add("card-img-top");             
+        cardImg.src = "assets/icons/logoIcon.svg";  
+        cardImg.alt = "logo";                                 
+        card.appendChild(cardImg); 
     
-    const placeholder = document.createElement("div")  
-        placeholder.classList.add("card-img-top");   
-        card.appendChild(placeholder);                     
+    // const placeholder = document.createElement("div")  
+    //     placeholder.classList.add("card-img-top");   
+    //     card.appendChild(placeholder);                     
 
     const cardBody = document.createElement("div");
         cardBody.classList.add("card-body");

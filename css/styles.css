@@ -207,8 +207,13 @@ main {
 }
 .grid .card-img-top {
     height: 178px;
-    object-fit: cover;
+    /* object-fit: cover; */
     background: #C7BEBE;
+}
+img.card-img-top  {
+    width: 100%;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
 .grid .card {
     overflow: hidden;
