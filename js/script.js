@@ -39,26 +39,27 @@ function createCard(recipe) {
 
     const recipeHeader = document.createElement("div");
         recipeHeader.classList.add("recipeHeader");
+        cardBody.appendChild(recipeHeader);
 
     const recipeTitle = document.createElement("h2");
         recipeTitle.classList.add("recipeTitle");
         recipeTitle.textContent = recipe.name;
         recipeHeader.appendChild(recipeTitle);
 
-    const recipeTime = document.createElement("span");
+    const recipeTime = document.createElement("div");
         recipeTime.classList.add("recipeTime");
-
+        recipeHeader.appendChild(recipeTime);
+        
     const recipeImg = document.createElement("img");
-        recipeImg.src = "/assets/icons/time.svg";
-        recipeImg.alt = "time";
-        recipeTime.appendChild(recipeImg);
+        recipeImg.classList.add("recipeImg");
+        recipeImg.src = "assets/icons/time.svg";
+        recipeImg.alt = "time";  
+        recipeTime.appendChild(recipeImg);          
 
     const recipeMinutes = document.createElement("span");
         recipeMinutes.classList.add("recipeMinutes");
         recipeMinutes.textContent = recipe.time + " min"
         recipeTime.appendChild(recipeMinutes);
-        recipeHeader.appendChild(recipeTitle);
-        cardBody.appendChild(recipeHeader);
 
     const recipeIngredients = document.createElement("ul");
         recipeIngredients.classList.add("recipeIngredients");
