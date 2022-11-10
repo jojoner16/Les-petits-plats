@@ -86,17 +86,29 @@ function recipesInputFilter() {
     let itemsFiltered = [];
 
     if (inputFilter.length >= 3) {
+        
+        for (let i = 0; i < recipesInputFiltered.length; i++) {
+            const item = recipesInputFiltered[i];
+            
+            const isFilterInName = item.name.toLowerCase().includes(inputFilter);
+            let isFilterInIngredients = false;
+            for (let j = 0; j < item.ingredients.length; j++) {
+                if (item.ingredients[j].ingredient.includes(inputFilter)) {
+                    isFilterInIngredients = true;
+                }
+            }
+            const isFilterInDescription = item.description.toLowerCase().includes(inputFilter);
+        
+            // Si la chaine de caractères est trouvée dans l'objet vérifié, on l'insère dans le tableau
+            if (isFilterInName || isFilterInIngredients || isFilterInDescription) {
+                itemsFiltered.push(item);
+            }
+        }
        
-        itemsFiltered = recipesInputFiltered.filter(
-            item => 
-            item.name.toLowerCase().includes(inputFilter) ||
-            item.ingredients.some(ingredientSelected => ingredientSelected.ingredient.includes(inputFilter)) || 
-            item.description.toLowerCase().includes(inputFilter)
-        );
-
-     
         [listOfIngredientsFilteredInput, listOfUtensilsFilteredInput, listOfAppliancesFilteredInput] = [...structureItems(itemsFiltered)];
         [listOfIngredientsFiltered, listOfUtensilsFiltered, listOfAppliancesFiltered] = [listOfIngredientsFilteredInput, listOfUtensilsFilteredInput, listOfAppliancesFilteredInput];
+    
+        getDropdownsLists();
     } else {
         itemsFiltered = recipesTagFiltered;
     }
