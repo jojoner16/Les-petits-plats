@@ -1,0 +1,26 @@
+@media screen and (max-width: 768px) {
+    .grid {
+        max-width: 440px;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+    }
+    .dropdownOpen .dropdownOptions {
+        display: flex;
+        flex-direction: column;
+    }
+    .filtersDropdowns {
+        justify-content: center;
+    }
+    main {
+        margin: 0 20px;
+    }
+    .dropdown{
+        width: 170px;
+    }
+    .recipeTitle{
+        width: 170px;
+    }
+    .filtersSelected{
+        justify-content: center;
+    }
+}
