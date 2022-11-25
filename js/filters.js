@@ -79,14 +79,14 @@ async function recipesTagReload() {
     recipesTagUpdate();
 }
 
-                                //barre de recherche
+                                //barre de recherche fonctionnelle avec FILTER
 function recipesInputFilter() {
 
     const inputFilter = document.querySelector(".search input").value.toLowerCase();
     let itemsFiltered = [];
 
     if (inputFilter.length >= 3) {
-        // Filtre cartes
+       
         itemsFiltered = recipesInputFiltered.filter(
             item => 
             item.name.toLowerCase().includes(inputFilter) ||
@@ -94,7 +94,7 @@ function recipesInputFilter() {
             item.description.toLowerCase().includes(inputFilter)
         );
 
-        // Filtre dropdowns
+        
         [listOfIngredientsFilteredInput, listOfUtensilsFilteredInput, listOfAppliancesFilteredInput] = [...structureItems(itemsFiltered)];
         [listOfIngredientsFiltered, listOfUtensilsFiltered, listOfAppliancesFiltered] = [listOfIngredientsFilteredInput, listOfUtensilsFilteredInput, listOfAppliancesFilteredInput];
     } else {
