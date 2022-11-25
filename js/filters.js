@@ -80,6 +80,7 @@ async function recipesTagReload() {
 }
 
                                 //barre de recherche fonctionnelle avec FILTER
+
 function recipesInputFilter() {
 
     const inputFilter = document.querySelector(".search input").value.toLowerCase();
@@ -94,7 +95,7 @@ function recipesInputFilter() {
             item.description.toLowerCase().includes(inputFilter)
         );
 
-        
+
         [listOfIngredientsFilteredInput, listOfUtensilsFilteredInput, listOfAppliancesFilteredInput] = [...structureItems(itemsFiltered)];
         [listOfIngredientsFiltered, listOfUtensilsFiltered, listOfAppliancesFiltered] = [listOfIngredientsFilteredInput, listOfUtensilsFilteredInput, listOfAppliancesFilteredInput];
     } else {

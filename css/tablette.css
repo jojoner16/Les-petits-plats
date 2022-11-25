@@ -1,0 +1,20 @@
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    main {
+        margin: 0 50px;
+    }
+    .dropdownOptions ul, .dropdownOptions ul:not(:last-of-type) {
+        width: 200px;
+    }
+    .filtersDropdowns {
+        justify-content: center;
+    }
+    .filtersSelected{
+        justify-content: center;
+    }
+    .recipeTitle{
+        width: 180px;
+    }
+}
