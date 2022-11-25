@@ -79,7 +79,7 @@ async function recipesTagReload() {
     recipesTagUpdate();
 }
 
-                 // barre de recherche
+                 // barre de recherche avec boucle natives FOR
 function recipesInputFilter() {
 
     const inputFilter = document.querySelector(".search input").value.toLowerCase();
