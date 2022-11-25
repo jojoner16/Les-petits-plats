@@ -79,6 +79,7 @@ async function recipesTagReload() {
     recipesTagUpdate();
 }
 
+                                //barre de recherche
 function recipesInputFilter() {
 
     const inputFilter = document.querySelector(".search input").value.toLowerCase();
